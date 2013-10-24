@@ -14,7 +14,7 @@
         "<link rel=\"stylesheet\" href=\"css/page.css\" />"
         "</head>"
         "<body>"
-        "<canvas id='game' height='400' width='600'></canvas>"
+        "<canvas id='game' height='800' width='800'></canvas>"
         "<script src='http://code.jquery.com/jquery-1.10.1.min.js'></script>"
         "<script src='js/cljs.js'></script>"
         "</body>"

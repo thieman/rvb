@@ -44,6 +44,7 @@
                             [(+ x width) (+ y height)] [x (+ y height)]]]
     (merge this {:width width
                  :height height
+                 :collide-type :tank
                  :color (if (= team :red) "red" "blue")
                  :center [(+ x (/ width 2)) (+ y (/ height 2))]
                  :angle (if (= team :red) 0 180)
@@ -162,6 +163,7 @@
   Constructable
   (construct [this]
     (merge this {:size 5
+                 :collide-type :bullet
                  :color (if (= team :red) "red" "blue")}))
 
   Renderable

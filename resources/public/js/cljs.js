@@ -1645,132 +1645,132 @@ cljs.core._invoke = function() {
     if(a ? a.cljs$core$IFn$_invoke$arity$9 : a) {
       return a.cljs$core$IFn$_invoke$arity$9(a, b, c, d, e, f, g, h, n)
     }
-    var l;
-    l = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
-    if(!l && (l = cljs.core._invoke._, !l)) {
-      throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
-    }
-    return l.call(null, a, b, c, d, e, f, g, h, n)
-  }, p = function(a, b, c, d, e, f, g, h, n, l) {
-    if(a ? a.cljs$core$IFn$_invoke$arity$10 : a) {
-      return a.cljs$core$IFn$_invoke$arity$10(a, b, c, d, e, f, g, h, n, l)
-    }
     var k;
     k = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
     if(!k && (k = cljs.core._invoke._, !k)) {
       throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
     }
-    return k.call(null, a, b, c, d, e, f, g, h, n, l)
-  }, l = function(a, b, c, d, e, f, g, h, n, l, k) {
+    return k.call(null, a, b, c, d, e, f, g, h, n)
+  }, p = function(a, b, c, d, e, f, g, h, n, k) {
+    if(a ? a.cljs$core$IFn$_invoke$arity$10 : a) {
+      return a.cljs$core$IFn$_invoke$arity$10(a, b, c, d, e, f, g, h, n, k)
+    }
+    var l;
+    l = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
+    if(!l && (l = cljs.core._invoke._, !l)) {
+      throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
+    }
+    return l.call(null, a, b, c, d, e, f, g, h, n, k)
+  }, l = function(a, b, c, d, e, f, g, h, n, k, l) {
     if(a ? a.cljs$core$IFn$_invoke$arity$11 : a) {
-      return a.cljs$core$IFn$_invoke$arity$11(a, b, c, d, e, f, g, h, n, l, k)
+      return a.cljs$core$IFn$_invoke$arity$11(a, b, c, d, e, f, g, h, n, k, l)
     }
     var p;
     p = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
     if(!p && (p = cljs.core._invoke._, !p)) {
       throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
     }
-    return p.call(null, a, b, c, d, e, f, g, h, n, l, k)
-  }, n = function(a, b, c, d, e, f, g, h, n, l, k, p) {
+    return p.call(null, a, b, c, d, e, f, g, h, n, k, l)
+  }, n = function(a, b, c, d, e, f, g, h, n, k, l, p) {
     if(a ? a.cljs$core$IFn$_invoke$arity$12 : a) {
-      return a.cljs$core$IFn$_invoke$arity$12(a, b, c, d, e, f, g, h, n, l, k, p)
+      return a.cljs$core$IFn$_invoke$arity$12(a, b, c, d, e, f, g, h, n, k, l, p)
     }
     var m;
     m = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
     if(!m && (m = cljs.core._invoke._, !m)) {
       throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
     }
-    return m.call(null, a, b, c, d, e, f, g, h, n, l, k, p)
-  }, s = function(a, b, c, d, e, f, g, h, n, l, k, p, m) {
+    return m.call(null, a, b, c, d, e, f, g, h, n, k, l, p)
+  }, s = function(a, b, c, d, e, f, g, h, n, k, l, p, m) {
     if(a ? a.cljs$core$IFn$_invoke$arity$13 : a) {
-      return a.cljs$core$IFn$_invoke$arity$13(a, b, c, d, e, f, g, h, n, l, k, p, m)
-    }
-    var q;
-    q = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
-    if(!q && (q = cljs.core._invoke._, !q)) {
-      throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
-    }
-    return q.call(null, a, b, c, d, e, f, g, h, n, l, k, p, m)
-  }, r = function(a, b, c, d, e, f, g, h, n, l, k, p, m, q) {
-    if(a ? a.cljs$core$IFn$_invoke$arity$14 : a) {
-      return a.cljs$core$IFn$_invoke$arity$14(a, b, c, d, e, f, g, h, n, l, k, p, m, q)
-    }
-    var s;
-    s = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
-    if(!s && (s = cljs.core._invoke._, !s)) {
-      throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
-    }
-    return s.call(null, a, b, c, d, e, f, g, h, n, l, k, p, m, q)
-  }, q = function(a, b, c, d, e, f, g, h, n, l, k, p, m, q, s) {
-    if(a ? a.cljs$core$IFn$_invoke$arity$15 : a) {
-      return a.cljs$core$IFn$_invoke$arity$15(a, b, c, d, e, f, g, h, n, l, k, p, m, q, s)
+      return a.cljs$core$IFn$_invoke$arity$13(a, b, c, d, e, f, g, h, n, k, l, p, m)
     }
     var r;
     r = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
     if(!r && (r = cljs.core._invoke._, !r)) {
       throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
     }
-    return r.call(null, a, b, c, d, e, f, g, h, n, l, k, p, m, q, s)
-  }, t = function(a, b, c, d, e, f, g, h, n, l, k, p, m, q, s, r) {
+    return r.call(null, a, b, c, d, e, f, g, h, n, k, l, p, m)
+  }, r = function(a, b, c, d, e, f, g, h, n, k, l, p, m, r) {
+    if(a ? a.cljs$core$IFn$_invoke$arity$14 : a) {
+      return a.cljs$core$IFn$_invoke$arity$14(a, b, c, d, e, f, g, h, n, k, l, p, m, r)
+    }
+    var q;
+    q = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
+    if(!q && (q = cljs.core._invoke._, !q)) {
+      throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
+    }
+    return q.call(null, a, b, c, d, e, f, g, h, n, k, l, p, m, r)
+  }, q = function(a, b, c, d, e, f, g, h, n, k, l, p, m, r, q) {
+    if(a ? a.cljs$core$IFn$_invoke$arity$15 : a) {
+      return a.cljs$core$IFn$_invoke$arity$15(a, b, c, d, e, f, g, h, n, k, l, p, m, r, q)
+    }
+    var s;
+    s = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
+    if(!s && (s = cljs.core._invoke._, !s)) {
+      throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
+    }
+    return s.call(null, a, b, c, d, e, f, g, h, n, k, l, p, m, r, q)
+  }, t = function(a, b, c, d, e, f, g, h, n, k, l, p, m, r, q, s) {
     if(a ? a.cljs$core$IFn$_invoke$arity$16 : a) {
-      return a.cljs$core$IFn$_invoke$arity$16(a, b, c, d, e, f, g, h, n, l, k, p, m, q, s, r)
+      return a.cljs$core$IFn$_invoke$arity$16(a, b, c, d, e, f, g, h, n, k, l, p, m, r, q, s)
     }
     var t;
     t = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
     if(!t && (t = cljs.core._invoke._, !t)) {
       throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
     }
-    return t.call(null, a, b, c, d, e, f, g, h, n, l, k, p, m, q, s, r)
-  }, u = function(a, b, c, d, e, f, g, h, n, l, k, p, m, q, s, r, t) {
+    return t.call(null, a, b, c, d, e, f, g, h, n, k, l, p, m, r, q, s)
+  }, u = function(a, b, c, d, e, f, g, h, n, k, l, p, m, r, q, s, t) {
     if(a ? a.cljs$core$IFn$_invoke$arity$17 : a) {
-      return a.cljs$core$IFn$_invoke$arity$17(a, b, c, d, e, f, g, h, n, l, k, p, m, q, s, r, t)
+      return a.cljs$core$IFn$_invoke$arity$17(a, b, c, d, e, f, g, h, n, k, l, p, m, r, q, s, t)
     }
     var u;
     u = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
     if(!u && (u = cljs.core._invoke._, !u)) {
       throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
     }
-    return u.call(null, a, b, c, d, e, f, g, h, n, l, k, p, m, q, s, r, t)
-  }, v = function(a, b, c, d, e, f, g, h, n, l, k, p, m, q, s, r, t, u) {
+    return u.call(null, a, b, c, d, e, f, g, h, n, k, l, p, m, r, q, s, t)
+  }, v = function(a, b, c, d, e, f, g, h, n, k, l, p, m, r, q, s, t, u) {
     if(a ? a.cljs$core$IFn$_invoke$arity$18 : a) {
-      return a.cljs$core$IFn$_invoke$arity$18(a, b, c, d, e, f, g, h, n, l, k, p, m, q, s, r, t, u)
+      return a.cljs$core$IFn$_invoke$arity$18(a, b, c, d, e, f, g, h, n, k, l, p, m, r, q, s, t, u)
     }
     var v;
     v = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
     if(!v && (v = cljs.core._invoke._, !v)) {
       throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
     }
-    return v.call(null, a, b, c, d, e, f, g, h, n, l, k, p, m, q, s, r, t, u)
-  }, w = function(a, b, c, d, e, f, g, h, n, l, k, p, m, q, s, r, t, u, v) {
+    return v.call(null, a, b, c, d, e, f, g, h, n, k, l, p, m, r, q, s, t, u)
+  }, w = function(a, b, c, d, e, f, g, h, n, k, l, p, m, r, q, s, t, u, v) {
     if(a ? a.cljs$core$IFn$_invoke$arity$19 : a) {
-      return a.cljs$core$IFn$_invoke$arity$19(a, b, c, d, e, f, g, h, n, l, k, p, m, q, s, r, t, u, v)
+      return a.cljs$core$IFn$_invoke$arity$19(a, b, c, d, e, f, g, h, n, k, l, p, m, r, q, s, t, u, v)
     }
     var w;
     w = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
     if(!w && (w = cljs.core._invoke._, !w)) {
       throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
     }
-    return w.call(null, a, b, c, d, e, f, g, h, n, l, k, p, m, q, s, r, t, u, v)
-  }, x = function(a, b, c, d, e, f, g, h, n, l, k, p, m, q, s, r, t, u, v, w) {
+    return w.call(null, a, b, c, d, e, f, g, h, n, k, l, p, m, r, q, s, t, u, v)
+  }, x = function(a, b, c, d, e, f, g, h, n, k, l, p, m, r, q, s, t, u, v, w) {
     if(a ? a.cljs$core$IFn$_invoke$arity$20 : a) {
-      return a.cljs$core$IFn$_invoke$arity$20(a, b, c, d, e, f, g, h, n, l, k, p, m, q, s, r, t, u, v, w)
+      return a.cljs$core$IFn$_invoke$arity$20(a, b, c, d, e, f, g, h, n, k, l, p, m, r, q, s, t, u, v, w)
     }
     var x;
     x = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
     if(!x && (x = cljs.core._invoke._, !x)) {
       throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
     }
-    return x.call(null, a, b, c, d, e, f, g, h, n, l, k, p, m, q, s, r, t, u, v, w)
-  }, O = function(a, b, c, d, e, f, g, h, n, l, k, p, m, q, s, r, t, u, v, w, x) {
+    return x.call(null, a, b, c, d, e, f, g, h, n, k, l, p, m, r, q, s, t, u, v, w)
+  }, O = function(a, b, c, d, e, f, g, h, n, k, l, p, m, r, q, s, t, u, v, w, x) {
     if(a ? a.cljs$core$IFn$_invoke$arity$21 : a) {
-      return a.cljs$core$IFn$_invoke$arity$21(a, b, c, d, e, f, g, h, n, l, k, p, m, q, s, r, t, u, v, w, x)
+      return a.cljs$core$IFn$_invoke$arity$21(a, b, c, d, e, f, g, h, n, k, l, p, m, r, q, s, t, u, v, w, x)
     }
     var O;
     O = cljs.core._invoke[goog.typeOf(null == a ? null : a)];
     if(!O && (O = cljs.core._invoke._, !O)) {
       throw cljs.core.missing_protocol.call(null, "IFn.-invoke", a);
     }
-    return O.call(null, a, b, c, d, e, f, g, h, n, l, k, p, m, q, s, r, t, u, v, w, x)
+    return O.call(null, a, b, c, d, e, f, g, h, n, k, l, p, m, r, q, s, t, u, v, w, x)
   }, a = function(a, y, A, B, E, G, H, I, K, z, C, F, D, P, Q, J, L, N, M, U, S) {
     switch(arguments.length) {
       case 1:
@@ -15528,9 +15528,9 @@ cljs.core.async.mult = function mult(b) {
         var l = h[1];
         if(32 === l) {
           try {
-            var n = h[5], k = h[6], m = cljs.core.async.put_BANG_.call(null, k, n, g), q = h, t = q;
-            t[2] = m;
-            t[1] = 30;
+            var n = h[5], k = h[6], r = cljs.core.async.put_BANG_.call(null, k, n, g), q = h, m = q;
+            m[2] = r;
+            m[1] = 30;
             return new cljs.core.Keyword(null, "recur", "recur", 1122293407)
           }catch(u) {
             if(u instanceof Object) {
@@ -16542,16 +16542,16 @@ cljs.core.async.map = function() {
           }
           if(11 === c) {
             try {
-              var e = b[5], n = g.call(null, e), s = l.call(null, e), f = cljs.core.async.take_BANG_.call(null, n, s), e = b;
+              var e = b[5], n = g.call(null, e), r = l.call(null, e), f = cljs.core.async.take_BANG_.call(null, n, r), e = b;
               e[2] = f;
               e[1] = 9;
               return new cljs.core.Keyword(null, "recur", "recur", 1122293407)
-            }catch(r) {
-              if(r instanceof Object) {
-                return b[1] = 10, b[2] = r, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
+            }catch(s) {
+              if(s instanceof Object) {
+                return b[1] = 10, b[2] = s, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
               }
               if(new cljs.core.Keyword(null, "else", "else", 1017020587)) {
-                throw r;
+                throw s;
               }
               return null
             }
@@ -17013,8 +17013,8 @@ rvb.model.Tank.prototype.rvb$model$DeathIncarnate$die_BANG_$arity$1 = function(a
 rvb.model.Tank.prototype.rvb$model$Constructable$ = !0;
 rvb.model.Tank.prototype.rvb$model$Constructable$construct$arity$1 = function(a) {
   var b = this.size, c = 0.7 * this.size, d = cljs.core.PersistentVector.fromArray([cljs.core.PersistentVector.fromArray([this.x, this.y], !0), cljs.core.PersistentVector.fromArray([this.x + b, this.y], !0), cljs.core.PersistentVector.fromArray([this.x + b, this.y + c], !0), cljs.core.PersistentVector.fromArray([this.x, this.y + c], !0)], !0);
-  return cljs.core.merge.call(null, a, cljs.core.PersistentArrayMap.fromArray([new cljs.core.Keyword(null, "width", "width", 1127031096), b, new cljs.core.Keyword(null, "height", "height", 4087841945), c, new cljs.core.Keyword(null, "color", "color", 1108746965), cljs.core._EQ_.call(null, this.team, new cljs.core.Keyword(null, "red", "red", 1014017027)) ? "red" : "blue", new cljs.core.Keyword(null, "center", "center", 3944857543), cljs.core.PersistentVector.fromArray([this.x + b / 2, this.y + c / 
-  2], !0), new cljs.core.Keyword(null, "angle", "angle", 1106865221), cljs.core._EQ_.call(null, this.team, new cljs.core.Keyword(null, "red", "red", 1014017027)) ? 0 : 180, new cljs.core.Keyword(null, "straight-corners", "straight-corners", 889569373), d, new cljs.core.Keyword(null, "corners", "corners", 1968950320), d], !0))
+  return cljs.core.merge.call(null, a, cljs.core.PersistentArrayMap.fromArray([new cljs.core.Keyword(null, "width", "width", 1127031096), b, new cljs.core.Keyword(null, "height", "height", 4087841945), c, new cljs.core.Keyword(null, "collide-type", "collide-type", 1434102491), new cljs.core.Keyword(null, "tank", "tank", 1017456732), new cljs.core.Keyword(null, "color", "color", 1108746965), cljs.core._EQ_.call(null, this.team, new cljs.core.Keyword(null, "red", "red", 1014017027)) ? "red" : "blue", 
+  new cljs.core.Keyword(null, "center", "center", 3944857543), cljs.core.PersistentVector.fromArray([this.x + b / 2, this.y + c / 2], !0), new cljs.core.Keyword(null, "angle", "angle", 1106865221), cljs.core._EQ_.call(null, this.team, new cljs.core.Keyword(null, "red", "red", 1014017027)) ? 0 : 180, new cljs.core.Keyword(null, "straight-corners", "straight-corners", 889569373), d, new cljs.core.Keyword(null, "corners", "corners", 1968950320), d], !0))
 };
 rvb.model.Tank.prototype.cljs$core$IPrintWithWriter$_pr_writer$arity$3 = function(a, b, c) {
   return cljs.core.pr_sequential_writer.call(null, b, function(a) {
@@ -17157,7 +17157,7 @@ rvb.model.Bullet.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(a, b
 };
 rvb.model.Bullet.prototype.rvb$model$Constructable$ = !0;
 rvb.model.Bullet.prototype.rvb$model$Constructable$construct$arity$1 = function(a) {
-  return cljs.core.merge.call(null, a, cljs.core.PersistentArrayMap.fromArray([new cljs.core.Keyword(null, "size", "size", 1017434995), 5, new cljs.core.Keyword(null, "color", "color", 1108746965), cljs.core._EQ_.call(null, this.team, new cljs.core.Keyword(null, "red", "red", 1014017027)) ? "red" : "blue"], !0))
+  return cljs.core.merge.call(null, a, cljs.core.PersistentArrayMap.fromArray([new cljs.core.Keyword(null, "size", "size", 1017434995), 5, new cljs.core.Keyword(null, "collide-type", "collide-type", 1434102491), new cljs.core.Keyword(null, "bullet", "bullet", 3930937460), new cljs.core.Keyword(null, "color", "color", 1108746965), cljs.core._EQ_.call(null, this.team, new cljs.core.Keyword(null, "red", "red", 1014017027)) ? "red" : "blue"], !0))
 };
 rvb.model.Bullet.prototype.cljs$core$IPrintWithWriter$_pr_writer$arity$3 = function(a, b, c) {
   return cljs.core.pr_sequential_writer.call(null, b, function(a) {
@@ -17311,17 +17311,17 @@ rvb.client._STAR_tanks_STAR_ = cljs.core.atom.call(null, cljs.core.PersistentVec
 rvb.client.speed = cljs.core.PersistentArrayMap.fromArray([new cljs.core.Keyword(null, "move", "move", 1017261891), 20, new cljs.core.Keyword(null, "turn-left", "turn-left", 843250377), 15, new cljs.core.Keyword(null, "turn-right", "turn-right", 4319230014), 15, new cljs.core.Keyword(null, "fire", "fire", 1017047464), 0.3, new cljs.core.Keyword(null, "bullet", "bullet", 3930937460), 40], !0);
 rvb.client.tanks_but_me = cljs.core.partial.call(null, rvb.util.tanks_but_me_STAR_, rvb.client._STAR_tanks_STAR_);
 rvb.client.get_tank_by_id = cljs.core.partial.call(null, rvb.util.get_tank_by_id_STAR_, rvb.client._STAR_tanks_STAR_);
-rvb.client.get_first_collision = function(a, b) {
+rvb.client.get_collisions = function(a, b) {
   var c = cljs.core.filter.call(null, function(b) {
-    var c = 50 >= Math.abs((new cljs.core.Keyword(null, "x", "x", 1013904362)).call(null, a) - (new cljs.core.Keyword(null, "x", "x", 1013904362)).call(null, b));
-    return c ? c : 50 >= Math.abs((new cljs.core.Keyword(null, "y", "y", 1013904363)).call(null, a) - (new cljs.core.Keyword(null, "y", "y", 1013904363)).call(null, b))
+    var c = 25 >= Math.abs((new cljs.core.Keyword(null, "x", "x", 1013904362)).call(null, a) - (new cljs.core.Keyword(null, "x", "x", 1013904362)).call(null, b));
+    return c ? 25 >= Math.abs((new cljs.core.Keyword(null, "y", "y", 1013904363)).call(null, a) - (new cljs.core.Keyword(null, "y", "y", 1013904363)).call(null, b)) : c
   }, b);
-  return cljs.core.first.call(null, cljs.core.filter.call(null, cljs.core.partial.call(null, rvb.model.collides_QMARK_, a), c))
+  return cljs.core.filter.call(null, cljs.core.partial.call(null, rvb.model.collides_QMARK_, a), c)
 };
 rvb.client.new_tank_position = function(a, b) {
   for(;;) {
-    var c = (cljs.core._EQ_.call(null, new cljs.core.Keyword(null, "red", "red", 1014017027), b) ? 150 : 450) + cljs.core.rand_int.call(null, -2) * cljs.core.rand_int.call(null, 100), d = 100 + cljs.core.rand_int.call(null, 200), e = rvb.model.construct.call(null, rvb.model.__GT_Tank.call(null, -1, null, null, null, a, c, d, 20, 3, b));
-    if(!cljs.core.truth_(rvb.client.get_first_collision.call(null, e, cljs.core.deref.call(null, rvb.client._STAR_tanks_STAR_)))) {
+    var c = (cljs.core._EQ_.call(null, new cljs.core.Keyword(null, "red", "red", 1014017027), b) ? 150 : 650) + cljs.core.rand_int.call(null, -2) * cljs.core.rand_int.call(null, 100), d = 100 + cljs.core.rand_int.call(null, 600), e = rvb.model.construct.call(null, rvb.model.__GT_Tank.call(null, -1, null, null, null, a, c, d, 20, 3, b));
+    if(!cljs.core.truth_(cljs.core.first.call(null, rvb.client.get_collisions.call(null, e, cljs.core.deref.call(null, rvb.client._STAR_tanks_STAR_))))) {
       return cljs.core.PersistentVector.fromArray([c, d], !0)
     }
   }
@@ -17376,12 +17376,25 @@ rvb.client.add_bullet = function(a, b, c) {
           return b = a[2], a[2] = b, a[1] = 3, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(5 === b) {
-          var b = a[5], b = rvb.model.render_BANG_.call(null, b), d = 1E3 / cljs.core.get.call(null, rvb.client.speed, new cljs.core.Keyword(null, "bullet", "bullet", 3930937460)), d = cljs.core.async.timeout.call(null, d);
-          a[8] = b;
-          return cljs.core.async.impl.ioc_helpers.take_BANG_.call(null, a, 8, d)
+          return b = a[5], b = rvb.model.render_BANG_.call(null, b), c = 1E3 / cljs.core.get.call(null, rvb.client.speed, new cljs.core.Keyword(null, "bullet", "bullet", 3930937460)), c = cljs.core.async.timeout.call(null, c), a[8] = b, cljs.core.async.impl.ioc_helpers.take_BANG_.call(null, a, 8, c)
         }
-        return 4 === b ? (d = a[9], b = (new cljs.core.Keyword(null, "events", "events", 4017542283)).call(null, d), d = cljs.core.hash_map.call(null, new cljs.core.Keyword(null, "op", "op", 1013907795), new cljs.core.Keyword(null, "hit", "hit", 1014007557), new cljs.core.Keyword(null, "tank", "tank", 1017456732), d), cljs.core.async.impl.ioc_helpers.put_BANG_.call(null, a, 7, b, d)) : 3 === b ? (b = a[2], cljs.core.async.impl.ioc_helpers.return_chan.call(null, a, b)) : 2 === b ? (c = a[7], b = rvb.model.move.call(null, 
-        c, 3), d = cljs.core.deref.call(null, rvb.client._STAR_tanks_STAR_), d = rvb.client.get_first_collision.call(null, b, d), c = rvb.model.erase_BANG_.call(null, c), a[9] = d, a[10] = c, a[5] = b, cljs.core.truth_(d) ? a[1] = 4 : a[1] = 5, new cljs.core.Keyword(null, "recur", "recur", 1122293407)) : 1 === b ? (c = e, a[7] = c, a[2] = null, a[1] = 2, new cljs.core.Keyword(null, "recur", "recur", 1122293407)) : null
+        if(4 === b) {
+          return c = a[9], b = (new cljs.core.Keyword(null, "events", "events", 4017542283)).call(null, c), c = cljs.core.hash_map.call(null, new cljs.core.Keyword(null, "op", "op", 1013907795), new cljs.core.Keyword(null, "hit", "hit", 1014007557), new cljs.core.Keyword(null, "tank", "tank", 1017456732), c), cljs.core.async.impl.ioc_helpers.put_BANG_.call(null, a, 7, b, c)
+        }
+        if(3 === b) {
+          return b = a[2], cljs.core.async.impl.ioc_helpers.return_chan.call(null, a, b)
+        }
+        if(2 === b) {
+          c = a[7];
+          var b = rvb.model.move.call(null, c, 3), d = cljs.core.deref.call(null, rvb.client._STAR_tanks_STAR_), d = rvb.client.get_collisions.call(null, b, d), d = cljs.core.first.call(null, d);
+          c = rvb.model.erase_BANG_.call(null, c);
+          a[10] = c;
+          a[9] = d;
+          a[5] = b;
+          cljs.core.truth_(d) ? a[1] = 4 : a[1] = 5;
+          return new cljs.core.Keyword(null, "recur", "recur", 1122293407)
+        }
+        return 1 === b ? (c = e, a[7] = c, a[2] = null, a[1] = 2, new cljs.core.Keyword(null, "recur", "recur", 1122293407)) : null
       })
     }(), b = function() {
       var b = a.call(null);
@@ -17395,8 +17408,8 @@ rvb.client.add_bullet = function(a, b, c) {
 rvb.client.animate_tank = function(a, b, c) {
   rvb.model.erase_BANG_.call(null, a);
   return cljs.core.truth_(rvb.client.get_tank_by_id.call(null, (new cljs.core.Keyword(null, "id", "id", 1013907597)).call(null, b))) ? (cljs.core.swap_BANG_.call(null, rvb.client._STAR_tanks_STAR_, rvb.util.update_tank, (new cljs.core.Keyword(null, "id", "id", 1013907597)).call(null, b), cljs.core.select_keys.call(null, b, cljs.core.PersistentVector.fromArray([new cljs.core.Keyword(null, "corners", "corners", 1968950320), new cljs.core.Keyword(null, "straight-corners", "straight-corners", 889569373), 
-  new cljs.core.Keyword(null, "center", "center", 3944857543), new cljs.core.Keyword(null, "angle", "angle", 1106865221)], !0))), rvb.model.render_BANG_.call(null, b), cljs.core._EQ_.call(null, (new cljs.core.Keyword(null, "op", "op", 1013907795)).call(null, c), new cljs.core.Keyword(null, "fire", "fire", 1017047464)) ? rvb.client.add_bullet.call(null, (new cljs.core.Keyword(null, "team", "team", 1017460175)).call(null, b), rvb.model.turret_endpoint.call(null, b), (new cljs.core.Keyword(null, "angle", 
-  "angle", 1106865221)).call(null, b)) : null) : null
+  new cljs.core.Keyword(null, "center", "center", 3944857543), new cljs.core.Keyword(null, "angle", "angle", 1106865221), new cljs.core.Keyword(null, "x", "x", 1013904362), new cljs.core.Keyword(null, "y", "y", 1013904363)], !0))), rvb.model.render_BANG_.call(null, b), cljs.core._EQ_.call(null, (new cljs.core.Keyword(null, "op", "op", 1013907795)).call(null, c), new cljs.core.Keyword(null, "fire", "fire", 1017047464)) ? rvb.client.add_bullet.call(null, (new cljs.core.Keyword(null, "team", "team", 
+  1017460175)).call(null, b), rvb.model.turret_endpoint.call(null, b), (new cljs.core.Keyword(null, "angle", "angle", 1106865221)).call(null, b)) : null) : null
 };
 rvb.client.add_tank = function(a) {
   var b = rvb.client.new_tank_position.call(null, rvb.client.canvas, a), c = cljs.core.nth.call(null, b, 0, null), b = cljs.core.nth.call(null, b, 1, null), d = cljs.core.async.chan.call(null, cljs.core.async.dropping_buffer.call(null, 10)), e = cljs.core.async.chan.call(null, cljs.core.async.sliding_buffer.call(null, 1)), f = cljs.core.async.chan.call(null, cljs.core.async.dropping_buffer.call(null, 10));
@@ -17543,8 +17556,8 @@ rvb.client.add_tank = function(a) {
         }
         if(10 === b) {
           var b = a[6], c = a[2], b = cljs.core.get.call(null, c, new cljs.core.Keyword(null, "tank", "tank", 1017456732)), c = cljs.core.get.call(null, c, new cljs.core.Keyword(null, "op", "op", 1013907795)), d = cljs.core._EQ_.call(null, new cljs.core.Keyword(null, "start", "start", 1123661780), c);
-          a[7] = b;
           a[6] = c;
+          a[7] = b;
           a[1] = d ? 11 : 12;
           return new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
@@ -17576,7 +17589,7 @@ rvb.client.add_tank = function(a) {
           return a[2] = null, a[1] = 20, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(20 === b) {
-          return b = a[9], c = a[2], d = cljs.core.swap_BANG_.call(null, rvb.client._STAR_tanks_STAR_, rvb.util.replace_tank, b), b = 0 === (new cljs.core.Keyword(null, "health", "health", 4087608782)).call(null, b), a[11] = d, a[12] = c, cljs.core.truth_(b) ? a[1] = 21 : a[1] = 22, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
+          return b = a[9], c = a[2], d = cljs.core.swap_BANG_.call(null, rvb.client._STAR_tanks_STAR_, rvb.util.replace_tank, b), b = 0 === (new cljs.core.Keyword(null, "health", "health", 4087608782)).call(null, b), a[11] = c, a[12] = d, cljs.core.truth_(b) ? a[1] = 21 : a[1] = 22, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(21 === b) {
           return b = a[9], c = (new cljs.core.Keyword(null, "events", "events", 4017542283)).call(null, b), b = cljs.core.hash_map.call(null, new cljs.core.Keyword(null, "op", "op", 1013907795), new cljs.core.Keyword(null, "die", "die", 1014003698), new cljs.core.Keyword(null, "tank", "tank", 1017456732), b), cljs.core.async.impl.ioc_helpers.put_BANG_.call(null, a, 24, c, b)
@@ -17638,8 +17651,8 @@ rvb.client.add_tank = function(a) {
       }(function(a) {
         var b = a[1];
         if(32 === b) {
-          var c = a[5], f = a[6], b = a[7], c = rvb.client.animate_tank.call(null, c, f, a[8]), b = 1E3 / cljs.core.get.call(null, rvb.client.speed, b), b = cljs.core.async.timeout.call(null, b);
-          a[9] = c;
+          var b = a[5], c = a[6], f = a[8], f = rvb.client.animate_tank.call(null, f, c, a[7]), b = 1E3 / cljs.core.get.call(null, rvb.client.speed, b), b = cljs.core.async.timeout.call(null, b);
+          a[9] = f;
           return cljs.core.async.impl.ioc_helpers.take_BANG_.call(null, a, 36, b)
         }
         if(1 === b) {
@@ -17652,7 +17665,7 @@ rvb.client.add_tank = function(a) {
           return cljs.core.async.impl.ioc_helpers.take_BANG_.call(null, a, 4, d)
         }
         if(34 === b) {
-          return c = a[5], b = a[2], c = (new cljs.core.Keyword(null, "id", "id", 1013907597)).call(null, c), a[10] = b, cljs.core.async.impl.ioc_helpers.put_BANG_.call(null, a, 35, e, c)
+          return f = a[8], b = a[2], f = (new cljs.core.Keyword(null, "id", "id", 1013907597)).call(null, f), a[10] = b, cljs.core.async.impl.ioc_helpers.put_BANG_.call(null, a, 35, e, f)
         }
         if(3 === b) {
           return b = a[2], cljs.core.async.impl.ioc_helpers.return_chan.call(null, a, b)
@@ -17667,13 +17680,13 @@ rvb.client.add_tank = function(a) {
           return new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(36 === b) {
-          return c = a[12], a[13] = a[2], cljs.core.truth_(0 < c) ? a[1] = 37 : a[1] = 38, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
+          return f = a[12], a[13] = a[2], cljs.core.truth_(0 < f) ? a[1] = 37 : a[1] = 38, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(5 === b) {
-          return g = a[11], c = a[14], b = cljs.core.rest.call(null, g), c = cljs.core.first.call(null, g), g = cljs.core.seq_QMARK_.call(null, c), a[14] = c, a[15] = b, a[1] = g ? 8 : 9, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
+          return g = a[11], f = a[14], b = cljs.core.rest.call(null, g), f = cljs.core.first.call(null, g), g = cljs.core.seq_QMARK_.call(null, f), a[14] = f, a[15] = b, a[1] = g ? 8 : 9, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(37 === b) {
-          return g = a[16], f = a[6], b = a[7], c = a[12], f = (new cljs.core.Keyword(null, "id", "id", 1013907597)).call(null, f), c -= 1, b = cljs.core.hash_map.call(null, new cljs.core.Keyword(null, "tank-id", "tank-id", 3766965328), f, new cljs.core.Keyword(null, "op", "op", 1013907795), b, new cljs.core.Keyword(null, "arg", "arg", 1014001096), c), a[16] = g, a[17] = b, a[2] = null, a[1] = 11, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
+          return g = a[16], b = a[5], c = a[6], f = a[12], c = (new cljs.core.Keyword(null, "id", "id", 1013907597)).call(null, c), f -= 1, b = cljs.core.hash_map.call(null, new cljs.core.Keyword(null, "tank-id", "tank-id", 3766965328), c, new cljs.core.Keyword(null, "op", "op", 1013907795), b, new cljs.core.Keyword(null, "arg", "arg", 1014001096), f), a[17] = b, a[16] = g, a[2] = null, a[1] = 11, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(6 === b) {
           return a[2] = null, a[1] = 7, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
@@ -17688,24 +17701,24 @@ rvb.client.add_tank = function(a) {
           return b = a[2], a[2] = b, a[1] = 33, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(8 === b) {
-          return c = a[14], b = cljs.core.apply.call(null, cljs.core.hash_map, c), a[2] = b, a[1] = 10, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
+          return f = a[14], b = cljs.core.apply.call(null, cljs.core.hash_map, f), a[2] = b, a[1] = 10, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(40 === b) {
-          return g = a[16], f = a[6], b = cljs.core.rest.call(null, g), c = cljs.core.first.call(null, g), g = (new cljs.core.Keyword(null, "id", "id", 1013907597)).call(null, f), g = cljs.core.hash_map.call(null, new cljs.core.Keyword(null, "tank-id", "tank-id", 3766965328), g), c = cljs.core.merge.call(null, c, g), a[16] = b, a[17] = c, a[2] = null, a[1] = 11, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
+          return g = a[16], c = a[6], b = cljs.core.rest.call(null, g), f = cljs.core.first.call(null, g), g = (new cljs.core.Keyword(null, "id", "id", 1013907597)).call(null, c), g = cljs.core.hash_map.call(null, new cljs.core.Keyword(null, "tank-id", "tank-id", 3766965328), g), f = cljs.core.merge.call(null, f, g), a[17] = f, a[16] = b, a[2] = null, a[1] = 11, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(9 === b) {
-          return c = a[14], a[2] = c, a[1] = 10, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
+          return f = a[14], a[2] = f, a[1] = 10, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(41 === b) {
-          return f = a[6], b = (new cljs.core.Keyword(null, "id", "id", 1013907597)).call(null, f), cljs.core.async.impl.ioc_helpers.put_BANG_.call(null, a, 43, e, b)
+          return c = a[6], b = (new cljs.core.Keyword(null, "id", "id", 1013907597)).call(null, c), cljs.core.async.impl.ioc_helpers.put_BANG_.call(null, a, 43, e, b)
         }
         if(10 === b) {
-          var c = a[14], b = a[15], h = a[2], g = cljs.core.get.call(null, h, new cljs.core.Keyword(null, "arg", "arg", 1014001096)), f = cljs.core.get.call(null, h, new cljs.core.Keyword(null, "op", "op", 1013907795)), h = cljs.core.get.call(null, h, new cljs.core.Keyword(null, "tank-id", "tank-id", 3766965328));
+          var f = a[14], b = a[15], h = a[2], g = cljs.core.get.call(null, h, new cljs.core.Keyword(null, "arg", "arg", 1014001096)), c = cljs.core.get.call(null, h, new cljs.core.Keyword(null, "op", "op", 1013907795)), h = cljs.core.get.call(null, h, new cljs.core.Keyword(null, "tank-id", "tank-id", 3766965328));
+          a[17] = f;
           a[16] = b;
-          a[18] = h;
-          a[19] = f;
-          a[20] = g;
-          a[17] = c;
+          a[18] = g;
+          a[19] = c;
+          a[20] = h;
           a[2] = null;
           a[1] = 11;
           return new cljs.core.Keyword(null, "recur", "recur", 1122293407)
@@ -17729,10 +17742,10 @@ rvb.client.add_tank = function(a) {
           return b = a[17], a[2] = b, a[1] = 15, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(15 === b) {
-          return g = a[2], c = cljs.core.get.call(null, g, new cljs.core.Keyword(null, "arg", "arg", 1014001096)), b = cljs.core.get.call(null, g, new cljs.core.Keyword(null, "op", "op", 1013907795)), f = cljs.core.get.call(null, g, new cljs.core.Keyword(null, "tank-id", "tank-id", 3766965328)), f = rvb.client.get_tank_by_id.call(null, f), a[5] = f, a[7] = b, a[12] = c, a[8] = g, cljs.core.truth_(f) ? a[1] = 16 : a[1] = 17, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
+          return g = a[2], f = cljs.core.get.call(null, g, new cljs.core.Keyword(null, "arg", "arg", 1014001096)), b = cljs.core.get.call(null, g, new cljs.core.Keyword(null, "op", "op", 1013907795)), c = cljs.core.get.call(null, g, new cljs.core.Keyword(null, "tank-id", "tank-id", 3766965328)), c = rvb.client.get_tank_by_id.call(null, c), a[5] = b, a[7] = g, a[12] = f, a[8] = c, cljs.core.truth_(c) ? a[1] = 16 : a[1] = 17, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(16 === b) {
-          return b = a[7], b = cljs.core._EQ_.call(null, new cljs.core.Keyword(null, "move", "move", 1017261891), b), a[1] = b ? 19 : 20, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
+          return b = a[5], b = cljs.core._EQ_.call(null, new cljs.core.Keyword(null, "move", "move", 1017261891), b), a[1] = b ? 19 : 20, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(17 === b) {
           return a[2] = null, a[1] = 18, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
@@ -17741,37 +17754,37 @@ rvb.client.add_tank = function(a) {
           return b = a[2], a[2] = b, a[1] = 12, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(19 === b) {
-          return c = a[5], b = rvb.model.move.call(null, c, 1), a[2] = b, a[1] = 21, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
+          return f = a[8], b = rvb.model.move.call(null, f, 1), a[2] = b, a[1] = 21, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(20 === b) {
-          return b = a[7], b = cljs.core._EQ_.call(null, new cljs.core.Keyword(null, "turn-left", "turn-left", 843250377), b), a[1] = b ? 22 : 23, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
+          return b = a[5], b = cljs.core._EQ_.call(null, new cljs.core.Keyword(null, "turn-left", "turn-left", 843250377), b), a[1] = b ? 22 : 23, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(21 === b) {
-          return b = a[2], c = rvb.client.tanks_but_me.call(null, b), c = rvb.client.get_first_collision.call(null, b, c), a[6] = b, cljs.core.truth_(c) ? a[1] = 31 : a[1] = 32, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
+          return b = a[2], f = rvb.client.tanks_but_me.call(null, b), f = rvb.client.get_collisions.call(null, b, f), f = cljs.core.first.call(null, f), a[6] = b, cljs.core.truth_(f) ? a[1] = 31 : a[1] = 32, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(22 === b) {
-          return c = a[5], b = (new cljs.core.Keyword(null, "angle", "angle", 1106865221)).call(null, c) - 1, b = rvb.model.orient.call(null, c, b), a[2] = b, a[1] = 24, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
+          return f = a[8], b = (new cljs.core.Keyword(null, "angle", "angle", 1106865221)).call(null, f) - 1, b = rvb.model.orient.call(null, f, b), a[2] = b, a[1] = 24, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(23 === b) {
-          return b = a[7], b = cljs.core._EQ_.call(null, new cljs.core.Keyword(null, "turn-right", "turn-right", 4319230014), b), a[1] = b ? 25 : 26, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
+          return b = a[5], b = cljs.core._EQ_.call(null, new cljs.core.Keyword(null, "turn-right", "turn-right", 4319230014), b), a[1] = b ? 25 : 26, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(24 === b) {
           return b = a[2], a[2] = b, a[1] = 21, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(25 === b) {
-          return c = a[5], b = (new cljs.core.Keyword(null, "angle", "angle", 1106865221)).call(null, c) + 1, b = rvb.model.orient.call(null, c, b), a[2] = b, a[1] = 27, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
+          return f = a[8], b = (new cljs.core.Keyword(null, "angle", "angle", 1106865221)).call(null, f) + 1, b = rvb.model.orient.call(null, f, b), a[2] = b, a[1] = 27, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(26 === b) {
-          return b = a[7], b = cljs.core._EQ_.call(null, new cljs.core.Keyword(null, "fire", "fire", 1017047464), b), a[1] = b ? 28 : 29, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
+          return b = a[5], b = cljs.core._EQ_.call(null, new cljs.core.Keyword(null, "fire", "fire", 1017047464), b), a[1] = b ? 28 : 29, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(27 === b) {
           return b = a[2], a[2] = b, a[1] = 24, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(28 === b) {
-          return c = a[5], b = rvb.model.fire.call(null, c), a[2] = b, a[1] = 30, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
+          return f = a[8], b = rvb.model.fire.call(null, f), a[2] = b, a[1] = 30, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
         }
         if(29 === b) {
-          throw b = a[7], a = [cljs.core.str("No matching clause: "), cljs.core.str(b)].join(""), Error(a);
+          throw b = a[5], a = [cljs.core.str("No matching clause: "), cljs.core.str(b)].join(""), Error(a);
         }
         return 30 === b ? (b = a[2], a[2] = b, a[1] = 27, new cljs.core.Keyword(null, "recur", "recur", 1122293407)) : 31 === b ? (b = cljs.core.async.timeout.call(null, 500), cljs.core.async.impl.ioc_helpers.take_BANG_.call(null, a, 34, b)) : null
       })
@@ -17784,49 +17797,49 @@ rvb.client.add_tank = function(a) {
   });
   return k
 };
-for(var seq__44833_44837 = cljs.core.seq.call(null, cljs.core.repeat.call(null, 15, new cljs.core.Keyword(null, "red", "red", 1014017027))), chunk__44834_44838 = null, count__44835_44839 = 0, i__44836_44840 = 0;;) {
-  if(i__44836_44840 < count__44835_44839) {
-    var team_44841 = cljs.core._nth.call(null, chunk__44834_44838, i__44836_44840);
-    rvb.client.add_tank.call(null, team_44841);
-    var G__44842 = seq__44833_44837, G__44843 = chunk__44834_44838, G__44844 = count__44835_44839, G__44845 = i__44836_44840 + 1, seq__44833_44837 = G__44842, chunk__44834_44838 = G__44843, count__44835_44839 = G__44844, i__44836_44840 = G__44845
+for(var seq__88916_88920 = cljs.core.seq.call(null, cljs.core.repeat.call(null, 25, new cljs.core.Keyword(null, "red", "red", 1014017027))), chunk__88917_88921 = null, count__88918_88922 = 0, i__88919_88923 = 0;;) {
+  if(i__88919_88923 < count__88918_88922) {
+    var team_88924 = cljs.core._nth.call(null, chunk__88917_88921, i__88919_88923);
+    rvb.client.add_tank.call(null, team_88924);
+    var G__88925 = seq__88916_88920, G__88926 = chunk__88917_88921, G__88927 = count__88918_88922, G__88928 = i__88919_88923 + 1, seq__88916_88920 = G__88925, chunk__88917_88921 = G__88926, count__88918_88922 = G__88927, i__88919_88923 = G__88928
   }else {
-    var temp__4092__auto___44846 = cljs.core.seq.call(null, seq__44833_44837);
-    if(temp__4092__auto___44846) {
-      var seq__44833_44847__$1 = temp__4092__auto___44846;
-      if(cljs.core.chunked_seq_QMARK_.call(null, seq__44833_44847__$1)) {
-        var c__3559__auto___44848 = cljs.core.chunk_first.call(null, seq__44833_44847__$1), G__44849 = cljs.core.chunk_rest.call(null, seq__44833_44847__$1), G__44850 = c__3559__auto___44848, G__44851 = cljs.core.count.call(null, c__3559__auto___44848), G__44852 = 0, seq__44833_44837 = G__44849, chunk__44834_44838 = G__44850, count__44835_44839 = G__44851, i__44836_44840 = G__44852
+    var temp__4092__auto___88929 = cljs.core.seq.call(null, seq__88916_88920);
+    if(temp__4092__auto___88929) {
+      var seq__88916_88930__$1 = temp__4092__auto___88929;
+      if(cljs.core.chunked_seq_QMARK_.call(null, seq__88916_88930__$1)) {
+        var c__3559__auto___88931 = cljs.core.chunk_first.call(null, seq__88916_88930__$1), G__88932 = cljs.core.chunk_rest.call(null, seq__88916_88930__$1), G__88933 = c__3559__auto___88931, G__88934 = cljs.core.count.call(null, c__3559__auto___88931), G__88935 = 0, seq__88916_88920 = G__88932, chunk__88917_88921 = G__88933, count__88918_88922 = G__88934, i__88919_88923 = G__88935
       }else {
-        var team_44853 = cljs.core.first.call(null, seq__44833_44847__$1);
-        rvb.client.add_tank.call(null, team_44853);
-        var G__44854 = cljs.core.next.call(null, seq__44833_44847__$1), G__44855 = null, G__44856 = 0, G__44857 = 0, seq__44833_44837 = G__44854, chunk__44834_44838 = G__44855, count__44835_44839 = G__44856, i__44836_44840 = G__44857
+        var team_88936 = cljs.core.first.call(null, seq__88916_88930__$1);
+        rvb.client.add_tank.call(null, team_88936);
+        var G__88937 = cljs.core.next.call(null, seq__88916_88930__$1), G__88938 = null, G__88939 = 0, G__88940 = 0, seq__88916_88920 = G__88937, chunk__88917_88921 = G__88938, count__88918_88922 = G__88939, i__88919_88923 = G__88940
       }
     }else {
       break
     }
   }
 }
-for(var seq__44858_44862 = cljs.core.seq.call(null, cljs.core.repeat.call(null, 15, new cljs.core.Keyword(null, "blue", "blue", 1016931276))), chunk__44859_44863 = null, count__44860_44864 = 0, i__44861_44865 = 0;;) {
-  if(i__44861_44865 < count__44860_44864) {
-    var team_44866 = cljs.core._nth.call(null, chunk__44859_44863, i__44861_44865);
-    rvb.client.add_tank.call(null, team_44866);
-    var G__44867 = seq__44858_44862, G__44868 = chunk__44859_44863, G__44869 = count__44860_44864, G__44870 = i__44861_44865 + 1, seq__44858_44862 = G__44867, chunk__44859_44863 = G__44868, count__44860_44864 = G__44869, i__44861_44865 = G__44870
+for(var seq__88941_88945 = cljs.core.seq.call(null, cljs.core.repeat.call(null, 25, new cljs.core.Keyword(null, "blue", "blue", 1016931276))), chunk__88942_88946 = null, count__88943_88947 = 0, i__88944_88948 = 0;;) {
+  if(i__88944_88948 < count__88943_88947) {
+    var team_88949 = cljs.core._nth.call(null, chunk__88942_88946, i__88944_88948);
+    rvb.client.add_tank.call(null, team_88949);
+    var G__88950 = seq__88941_88945, G__88951 = chunk__88942_88946, G__88952 = count__88943_88947, G__88953 = i__88944_88948 + 1, seq__88941_88945 = G__88950, chunk__88942_88946 = G__88951, count__88943_88947 = G__88952, i__88944_88948 = G__88953
   }else {
-    var temp__4092__auto___44871 = cljs.core.seq.call(null, seq__44858_44862);
-    if(temp__4092__auto___44871) {
-      var seq__44858_44872__$1 = temp__4092__auto___44871;
-      if(cljs.core.chunked_seq_QMARK_.call(null, seq__44858_44872__$1)) {
-        var c__3559__auto___44873 = cljs.core.chunk_first.call(null, seq__44858_44872__$1), G__44874 = cljs.core.chunk_rest.call(null, seq__44858_44872__$1), G__44875 = c__3559__auto___44873, G__44876 = cljs.core.count.call(null, c__3559__auto___44873), G__44877 = 0, seq__44858_44862 = G__44874, chunk__44859_44863 = G__44875, count__44860_44864 = G__44876, i__44861_44865 = G__44877
+    var temp__4092__auto___88954 = cljs.core.seq.call(null, seq__88941_88945);
+    if(temp__4092__auto___88954) {
+      var seq__88941_88955__$1 = temp__4092__auto___88954;
+      if(cljs.core.chunked_seq_QMARK_.call(null, seq__88941_88955__$1)) {
+        var c__3559__auto___88956 = cljs.core.chunk_first.call(null, seq__88941_88955__$1), G__88957 = cljs.core.chunk_rest.call(null, seq__88941_88955__$1), G__88958 = c__3559__auto___88956, G__88959 = cljs.core.count.call(null, c__3559__auto___88956), G__88960 = 0, seq__88941_88945 = G__88957, chunk__88942_88946 = G__88958, count__88943_88947 = G__88959, i__88944_88948 = G__88960
       }else {
-        var team_44878 = cljs.core.first.call(null, seq__44858_44872__$1);
-        rvb.client.add_tank.call(null, team_44878);
-        var G__44879 = cljs.core.next.call(null, seq__44858_44872__$1), G__44880 = null, G__44881 = 0, G__44882 = 0, seq__44858_44862 = G__44879, chunk__44859_44863 = G__44880, count__44860_44864 = G__44881, i__44861_44865 = G__44882
+        var team_88961 = cljs.core.first.call(null, seq__88941_88955__$1);
+        rvb.client.add_tank.call(null, team_88961);
+        var G__88962 = cljs.core.next.call(null, seq__88941_88955__$1), G__88963 = null, G__88964 = 0, G__88965 = 0, seq__88941_88945 = G__88962, chunk__88942_88946 = G__88963, count__88943_88947 = G__88964, i__88944_88948 = G__88965
       }
     }else {
       break
     }
   }
 }
-var c__5084__auto___44958 = cljs.core.async.chan.call(null, 1);
+var c__5084__auto___89041 = cljs.core.async.chan.call(null, 1);
 cljs.core.async.impl.dispatch.run.call(null, function() {
   var a = function() {
     return function(a) {
@@ -17860,50 +17873,51 @@ cljs.core.async.impl.dispatch.run.call(null, function() {
       var b = a[1];
       if(1 === b) {
         var b = cljs.core.deref.call(null, rvb.client._STAR_tanks_STAR_), b = cljs.core.seq.call(null, b), e, f, g;
-        a[5] = 0;
+        a[5] = b;
         a[6] = null;
         a[7] = 0;
-        a[8] = b;
+        a[8] = 0;
         a[2] = null;
         a[1] = 2;
         return new cljs.core.Keyword(null, "recur", "recur", 1122293407)
       }
       if(2 === b) {
-        return g = a[5], f = a[7], cljs.core.truth_(g < f) ? a[1] = 4 : a[1] = 5, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
+        return f = a[7], g = a[8], cljs.core.truth_(g < f) ? a[1] = 4 : a[1] = 5, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
       }
       if(3 === b) {
         return b = a[2], cljs.core.async.impl.ioc_helpers.return_chan.call(null, a, b)
       }
       if(4 === b) {
-        return g = a[5], e = a[6], f = cljs.core._nth.call(null, e, g), b = (new cljs.core.Keyword(null, "events", "events", 4017542283)).call(null, f), f = cljs.core.hash_map.call(null, new cljs.core.Keyword(null, "op", "op", 1013907795), new cljs.core.Keyword(null, "start", "start", 1123661780), new cljs.core.Keyword(null, "tank", "tank", 1017456732), f), cljs.core.async.impl.ioc_helpers.put_BANG_.call(null, a, 7, b, f)
+        return e = a[6], g = a[8], f = cljs.core._nth.call(null, e, g), b = (new cljs.core.Keyword(null, "events", "events", 4017542283)).call(null, f), f = cljs.core.hash_map.call(null, new cljs.core.Keyword(null, "op", "op", 1013907795), new cljs.core.Keyword(null, "start", "start", 1123661780), new cljs.core.Keyword(null, "tank", "tank", 1017456732), f), cljs.core.async.impl.ioc_helpers.put_BANG_.call(null, a, 7, b, f)
       }
       if(5 === b) {
-        return f = a[9], b = a[8], b = cljs.core.seq.call(null, b), a[9] = b, a[1] = b ? 8 : 9, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
+        return b = a[5], f = a[9], b = cljs.core.seq.call(null, b), a[9] = b, a[1] = b ? 8 : 9, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
       }
       if(6 === b) {
         return b = a[2], a[2] = b, a[1] = 3, new cljs.core.Keyword(null, "recur", "recur", 1122293407)
       }
       if(7 === b) {
-        g = a[5];
+        b = a[5];
         e = a[6];
         f = a[7];
-        var b = a[8], h = a[2];
-        a[5] = g + 1;
-        a[6] = e;
+        g = a[8];
+        var h = a[2];
+        a[5] = b;
         a[10] = h;
+        a[6] = e;
         a[7] = f;
-        a[8] = b;
+        a[8] = g + 1;
         a[2] = null;
         a[1] = 2;
         return new cljs.core.Keyword(null, "recur", "recur", 1122293407)
       }
       return 8 === b ? (f = a[9], b = cljs.core.chunked_seq_QMARK_.call(null, f), a[1] = b ? 11 : 12, new cljs.core.Keyword(null, "recur", "recur", 1122293407)) : 9 === b ? (a[2] = null, a[1] = 10, new cljs.core.Keyword(null, "recur", "recur", 1122293407)) : 10 === b ? (b = a[2], a[2] = b, a[1] = 6, new cljs.core.Keyword(null, "recur", "recur", 1122293407)) : 11 === b ? (f = a[9], b = cljs.core.chunk_first.call(null, f), f = cljs.core.chunk_rest.call(null, f), g = cljs.core.count.call(null, b), a[5] = 
-      0, a[6] = b, a[7] = g, a[8] = f, a[2] = null, a[1] = 2, new cljs.core.Keyword(null, "recur", "recur", 1122293407)) : 12 === b ? (f = a[9], f = cljs.core.first.call(null, f), b = (new cljs.core.Keyword(null, "events", "events", 4017542283)).call(null, f), f = cljs.core.hash_map.call(null, new cljs.core.Keyword(null, "op", "op", 1013907795), new cljs.core.Keyword(null, "start", "start", 1123661780), new cljs.core.Keyword(null, "tank", "tank", 1017456732), f), cljs.core.async.impl.ioc_helpers.put_BANG_.call(null, 
-      a, 14, b, f)) : 13 === b ? (b = a[2], a[2] = b, a[1] = 10, new cljs.core.Keyword(null, "recur", "recur", 1122293407)) : 14 === b ? (f = a[9], g = a[2], b = cljs.core.next.call(null, f), a[5] = 0, a[6] = null, a[7] = 0, a[11] = g, a[8] = b, a[2] = null, a[1] = 2, new cljs.core.Keyword(null, "recur", "recur", 1122293407)) : null
+      f, a[6] = b, a[7] = g, a[8] = 0, a[2] = null, a[1] = 2, new cljs.core.Keyword(null, "recur", "recur", 1122293407)) : 12 === b ? (f = a[9], f = cljs.core.first.call(null, f), b = (new cljs.core.Keyword(null, "events", "events", 4017542283)).call(null, f), f = cljs.core.hash_map.call(null, new cljs.core.Keyword(null, "op", "op", 1013907795), new cljs.core.Keyword(null, "start", "start", 1123661780), new cljs.core.Keyword(null, "tank", "tank", 1017456732), f), cljs.core.async.impl.ioc_helpers.put_BANG_.call(null, 
+      a, 14, b, f)) : 13 === b ? (b = a[2], a[2] = b, a[1] = 10, new cljs.core.Keyword(null, "recur", "recur", 1122293407)) : 14 === b ? (f = a[9], g = a[2], b = cljs.core.next.call(null, f), a[5] = b, a[11] = g, a[6] = null, a[7] = 0, a[8] = 0, a[2] = null, a[1] = 2, new cljs.core.Keyword(null, "recur", "recur", 1122293407)) : null
     })
   }(), b = function() {
     var b = a.call(null);
-    b[cljs.core.async.impl.ioc_helpers.USER_START_IDX] = c__5084__auto___44958;
+    b[cljs.core.async.impl.ioc_helpers.USER_START_IDX] = c__5084__auto___89041;
     return b
   }();
   return cljs.core.async.impl.ioc_helpers.run_state_machine_wrapped.call(null, b)
