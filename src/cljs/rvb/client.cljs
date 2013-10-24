@@ -27,7 +27,7 @@
 (defn new-tank-position [canvas team]
   (let [seedX (if (= :red team) 200 700)
         startX (+ seedX (* (rand-int -2) (rand-int 100)))
-        startY (+ 100 (rand-int 600))
+        startY (+ 20 (rand-int 750))
         tank (construct (->Tank -1 nil nil nil canvas startX startY 20 3 team))]
     (if (first (get-collisions tank @*tanks*))
       (recur canvas team)
@@ -70,16 +70,17 @@
         animation (chan (dropping-buffer 10))
         control (chan (sliding-buffer 1))
         events (chan (dropping-buffer 10))
-        t (construct (->Tank @*next-tank-id* canvas control animation events startX startY 20 3 team))]
+        t (construct (->Tank @*next-tank-id* canvas control animation events startX startY 20 3 team))
+        tank-id (:id t)]
 
     (swap! *next-tank-id* inc)
     (swap! *tanks* replace-tank t)
 
     ;; control/AI goroutine
     (go (loop []
-          (when-let [tank-id (<! control)]
+          (when-let [control-args (<! control)]
             (when-let [t (get-tank-by-id tank-id)]
-              (let [turn-actions (remove #(zero? (:arg %)) (make-decisions t @*tanks* speed))]
+              (let [turn-actions (remove #(zero? (:arg %)) (make-decisions t @*tanks* speed control-args))]
                 (>! animation turn-actions)
                 (recur))))))
 
@@ -87,7 +88,7 @@
     (go (loop []
           (when-let [{:keys [op tank] :as event} (<! events)]
             (condp = op
-              :start (>! control (:id tank))
+              :start (>! control {})
               :hit (let [new-tank (take-damage tank 1)]
                      (when (pos? (:health new-tank))
                        (erase! new-tank)
@@ -105,22 +106,23 @@
             (loop [next-steps (rest steps)
                    {:keys [tank-id op arg] :as step} (first steps)]
               (when-let [old-tank (get-tank-by-id tank-id)]
-                (let [new-tank (process-animation-command op old-tank)]
+                (let [new-tank (process-animation-command op old-tank)
+                      collisions (get-collisions new-tank (tanks-but-me new-tank))]
                   ;; if this move causes a collision, abort move and penalize the tank
-                  (if (first (get-collisions new-tank (tanks-but-me new-tank)))
+                  (if (seq collisions)
                     (do (<! (timeout 500))
-                        (>! control (:id old-tank)))
+                        (>! control {:event :collision :info collisions}))
                     (do (animate-tank old-tank new-tank step)
                         (<! (timeout (/ 1000 (get speed op))))
                         (if (> arg 1)
                           (recur next-steps {:tank-id (:id new-tank) :op op :arg (dec arg)})
                           (if (seq next-steps)
                             (recur (rest next-steps) (merge (first next-steps) {:tank-id (:id new-tank)}))
-                            (>! control (:id new-tank)))))))))
+                            (>! control {}))))))))
                 (recur))))))
 
-(doseq [team (repeat 5 :red)] (add-tank team))
-(doseq [team (repeat 1 :blue)] (add-tank team))
+(doseq [team (repeat 25 :red)] (add-tank team))
+(doseq [team (repeat 25 :blue)] (add-tank team))
 
 (go (doseq [tank @*tanks*]
       (>! (:events tank) {:op :start :tank tank})))
