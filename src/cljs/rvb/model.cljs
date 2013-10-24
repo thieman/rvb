@@ -31,6 +31,8 @@
   (construct [this]
     (let [canvas-object (.getElementById js/document "game")]
       (merge this {:canvas canvas-object
+                   :width (.-width canvas-object)
+                   :height (.-height canvas-object)
                    :bg-color "white"
                    :context (.getContext canvas-object "2d")}))))
 

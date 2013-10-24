@@ -19,13 +19,13 @@
 
 (defn get-collisions [obj coll]
   (let [nearby? (fn [target]
-                  (and (>= 25 (.abs js/Math (- (:x obj) (:x target))))
-                       (>= 25 (.abs js/Math (- (:y obj) (:y target))))))
+                  (and (>= 40 (.abs js/Math (- (:x obj) (:x target))))
+                       (>= 40 (.abs js/Math (- (:y obj) (:y target))))))
         nearby-coll (filter nearby? coll)]
     (filter (partial collides? obj) nearby-coll)))
 
 (defn new-tank-position [canvas team]
-  (let [seedX (if (= :red team) 150 650)
+  (let [seedX (if (= :red team) 200 700)
         startX (+ seedX (* (rand-int -2) (rand-int 100)))
         startY (+ 100 (rand-int 600))
         tank (construct (->Tank -1 nil nil nil canvas startX startY 20 3 team))]
@@ -37,23 +37,33 @@
   (let [[x y] coords
         bullet (construct (->Bullet canvas x y team degree))]
     (go (loop [bullet bullet]
-          (let [new-bullet (move bullet 3)
-                hit-tank (first (get-collisions new-bullet @*tanks*))]
-            (erase! bullet)
-            (if hit-tank
-              (>! (:events hit-tank) {:op :hit :tank hit-tank})
-              (do (render! new-bullet)
-                  (<! (timeout (/ 1000 (get speed :bullet))))
-                  (recur new-bullet))))))))
+          ; kill the bullet once it's outside the canvas
+          (when (and (<= 0 x (:width canvas))
+                     (<= 0 y (:height canvas)))
+            (let [new-bullet (move bullet 3)
+                  hit-tank (first (get-collisions new-bullet @*tanks*))]
+              (erase! bullet)
+              (if hit-tank
+                (>! (:events hit-tank) {:op :hit :tank hit-tank})
+                (do (render! new-bullet)
+                    (<! (timeout (/ 1000 (get speed :bullet))))
+                    (recur new-bullet)))))))))
 
 (defn animate-tank [old-tank new-tank step]
-  (do (erase! old-tank)
-      (when (get-tank-by-id (:id new-tank)) ;; am I still alive?
-        (swap! *tanks* update-tank (:id new-tank)
-               (select-keys new-tank [:corners :straight-corners :center :angle :x :y]))
-        (render! new-tank)
-        (when (= (:op step) :fire)
-          (add-bullet (:team new-tank) (turret-endpoint new-tank) (:angle new-tank))))))
+  (erase! old-tank)
+  (when (get-tank-by-id (:id new-tank)) ;; am I still alive?
+    (swap! *tanks* update-tank (:id new-tank)
+           (select-keys new-tank [:corners :straight-corners :center :angle :x :y]))
+    (render! new-tank)
+    (when (= (:op step) :fire)
+      (add-bullet (:team new-tank) (turret-endpoint new-tank) (:angle new-tank)))))
+
+(defn process-animation-command [op old-tank]
+  (condp = op
+    :move (move old-tank 1)
+    :turn-left (orient old-tank (dec (:angle old-tank)))
+    :turn-right (orient old-tank (inc (:angle old-tank)))
+    :fire (fire old-tank)))
 
 (defn add-tank [team]
   (let [[startX startY] (new-tank-position canvas team)
@@ -96,26 +106,22 @@
             (loop [next-steps (rest steps)
                    {:keys [tank-id op arg] :as step} (first steps)]
               (when-let [old-tank (get-tank-by-id tank-id)]
-                (let [new-tank (condp = op
-                                 :move (move old-tank 1)
-                                 :turn-left (orient old-tank (dec (:angle old-tank)))
-                                 :turn-right (orient old-tank (inc (:angle old-tank)))
-                                 :fire (fire old-tank))]
+                (let [new-tank (process-animation-command op old-tank)]
                   ;; if this move causes a collision, abort move and penalize the tank
                   (if (first (get-collisions new-tank (tanks-but-me new-tank)))
                     (do (<! (timeout 500))
                         (>! control (:id old-tank)))
                     (do (animate-tank old-tank new-tank step)
                         (<! (timeout (/ 1000 (get speed op))))
-                        (if (pos? arg)
+                        (if (> arg 1)
                           (recur next-steps {:tank-id (:id new-tank) :op op :arg (dec arg)})
                           (if (seq next-steps)
                             (recur (rest next-steps) (merge (first next-steps) {:tank-id (:id new-tank)}))
                             (>! control (:id new-tank)))))))))
                 (recur))))))
 
-(doseq [team (repeat 25 :red)] (add-tank team))
-(doseq [team (repeat 25 :blue)] (add-tank team))
+(doseq [team (repeat 5 :red)] (add-tank team))
+(doseq [team (repeat 1 :blue)] (add-tank team))
 
 (go (doseq [tank @*tanks*]
       (>! (:events tank) {:op :start :tank tank})))
