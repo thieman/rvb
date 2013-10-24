@@ -4,6 +4,7 @@
                           turret-endpoint fire collides? take-damage die!]]
         [rvb.util :only [abs-angle-diff angle-direction tanks-but-me*
                          replace-tank update-tank remove-tank get-tank-by-id*]]
+        [rvb.ai :only [make-decisions]]
         [cljs.core.async :only [chan close! sliding-buffer dropping-buffer timeout >! <!]])
   (:require-macros [cljs.core.async.macros :refer [go alts!]]))
 
@@ -15,8 +16,6 @@
 
 (def tanks-but-me (partial tanks-but-me* *tanks*))
 (def get-tank-by-id (partial get-tank-by-id* *tanks*))
-
-(defn animate [tank op arg] {:tank-id (:id tank) :op op :arg arg})
 
 (defn get-first-collision [obj coll]
   (let [nearby? (fn [target] (or (>= 50 (.abs js/Math (- (:x obj) (:x target))))
@@ -46,27 +45,6 @@
                   (<! (timeout (/ 1000 (get speed :bullet))))
                   (recur new-bullet))))))))
 
-(defmulti make-decisions :team)
-(declare make-decisions*)
-(defmethod make-decisions :red [tank] (make-decisions* tank))
-(defmethod make-decisions :blue [tank] (make-decisions* tank))
-
-(defn make-decisions* [tank]
-  (let [curr-tanks @*tanks*
-        closest (find-target tank curr-tanks)
-        target-dist (dist tank closest)
-        angle-to-target (.ceil js/Math (target-angle tank closest))
-        angle-diff (abs-angle-diff (:angle tank) angle-to-target)
-        turn-type (angle-direction (:angle tank) angle-to-target)
-        turn-type (if (= :left turn-type) :turn-left :turn-right)]
-    (if (and (< target-dist 150) (< angle-diff 2))
-      [(animate tank :fire 1)]
-      (let [turns-required (min (.floor js/Math angle-diff) (get speed turn-type))
-            turn-perc (/ turns-required (get speed :turn-right))
-            moves-allowed (.floor js/Math (* (get speed :move) (- 1 turn-perc)))]
-        [(animate tank turn-type turns-required)
-         (animate tank :move moves-allowed)]))))
-
 (defn animate-tank [old-tank new-tank step]
   (do (erase! old-tank)
       (when (get-tank-by-id (:id new-tank)) ;; am I still alive?
@@ -90,7 +68,7 @@
     (go (loop []
           (when-let [tank-id (<! control)]
             (when-let [t (get-tank-by-id tank-id)]
-              (let [turn-actions (remove #(zero? (:arg %)) (make-decisions t))]
+              (let [turn-actions (remove #(zero? (:arg %)) (make-decisions t @*tanks* speed))]
                 (>! animation turn-actions)
                 (recur))))))
 
