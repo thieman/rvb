@@ -46,7 +46,12 @@
                   (<! (timeout (/ 1000 (get speed :bullet))))
                   (recur new-bullet))))))))
 
-(defn make-decisions [tank]
+(defmulti make-decisions :team)
+(declare make-decisions*)
+(defmethod make-decisions :red [tank] (make-decisions* tank))
+(defmethod make-decisions :blue [tank] (make-decisions* tank))
+
+(defn make-decisions* [tank]
   (let [curr-tanks @*tanks*
         closest (find-target tank curr-tanks)
         target-dist (dist tank closest)
@@ -130,8 +135,8 @@
                             (>! control (:id new-tank)))))))))
                 (recur))))))
 
-(doseq [team (repeat 10 :red)] (add-tank team))
-(doseq [team (repeat 10 :blue)] (add-tank team))
+(doseq [team (repeat 15 :red)] (add-tank team))
+(doseq [team (repeat 15 :blue)] (add-tank team))
 
 (go (doseq [tank @*tanks*]
       (>! (:events tank) {:op :start :tank tank})))
