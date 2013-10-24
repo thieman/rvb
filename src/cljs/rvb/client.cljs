@@ -19,7 +19,10 @@
 (defn animate [tank op arg] {:tank-id (:id tank) :op op :arg arg})
 
 (defn get-first-collision [obj coll]
-  (first (filter (partial collides? obj) coll)))
+  (let [nearby? (fn [target] (or (>= 50 (.abs js/Math (- (:x obj) (:x target))))
+                                 (>= 50 (.abs js/Math (- (:y obj) (:y target))))))
+        nearby-coll (filter nearby? coll)]
+    (first (filter (partial collides? obj) nearby-coll))))
 
 (defn new-tank-position [canvas team]
   (let [seedX (if (= :red team) 150 450)

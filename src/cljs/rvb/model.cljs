@@ -105,10 +105,13 @@
   (move [{:keys [center corners straight-corners angle] :as this} length]
     (let [rad (deg->rad angle)
           diffX (* length (.cos js/Math rad))
-          diffY (* length (.sin js/Math rad))]
+          diffY (* length (.sin js/Math rad))
+          new-center (apply mapv + [center [diffX diffY]])]
       (merge this {:corners (mapv #(apply mapv + [% [diffX diffY]]) corners)
                    :straight-corners (mapv #(apply mapv + [% [diffX diffY]]) straight-corners)
-                   :center (apply mapv + [center [diffX diffY]])})))
+                   :center new-center
+                   :x (first new-center)
+                   :y (second new-center)})))
 
   DeathIncarnate
   (orient [{:keys [straight-corners center] :as this} degree]
