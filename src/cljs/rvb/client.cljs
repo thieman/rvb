@@ -12,7 +12,7 @@
 (def *next-tank-id* (atom 0))
 (def *tanks* (atom []))
 
-(def speed {:move 20 :turn-left 15 :turn-right 15 :fire 0.3 :bullet 40})
+(def speed {:move 20 :turn-left 25 :turn-right 25 :fire 0.3 :bullet 40})
 
 (def tanks-but-me (partial tanks-but-me* *tanks*))
 (def get-tank-by-id (partial get-tank-by-id* *tanks*))

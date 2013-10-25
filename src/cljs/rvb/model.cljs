@@ -33,7 +33,7 @@
       (merge this {:canvas canvas-object
                    :width (.-width canvas-object)
                    :height (.-height canvas-object)
-                   :bg-color "white"
+                   :bg-color "#0C1415"
                    :context (.getContext canvas-object "2d")}))))
 
 (defrecord Tank [id canvas control animation events x y size health team]
@@ -47,7 +47,7 @@
     (merge this {:width width
                  :height height
                  :collide-type :tank
-                 :color (if (= team :red) "red" "blue")
+                 :color (if (= team :red) "#DF740C" "#6FC3DF")
                  :center [(+ x (/ width 2)) (+ y (/ height 2))]
                  :angle (if (= team :red) 0 180)
                  :straight-corners straight-corners
@@ -166,7 +166,7 @@
   (construct [this]
     (merge this {:size 5
                  :collide-type :bullet
-                 :color (if (= team :red) "red" "blue")}))
+                 :color (if (= team :red) "#DF740C" "#6FC3DF")}))
 
   Renderable
   (render! [{:keys [size color] :as this}]

@@ -22,7 +22,7 @@
                      :fire
                      :move)))]
     (condp = action
-      :victory [(animate tank :turn-right 10) (animate tank :turn-left 10)]
+      :victory [(animate tank :turn-right 15) (animate tank :turn-left 15)]
       :flail (let [roll (rand)]
                 (condp >= roll
                   0.4 [(animate tank :move -5)]
