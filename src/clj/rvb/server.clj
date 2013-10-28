@@ -15,8 +15,9 @@
         "</head>"
         "<body>"
         "<canvas id='game' height='800' width='800'></canvas>"
-        "<script src='http://code.jquery.com/jquery-1.10.1.min.js'></script>"
+        "<script src='out/goog/base.js' type='text/javascript'></script>"
         "<script src='js/cljs.js'></script>"
+        "<script type='text/javascript'>goog.require('rvb.client');</script>"
         "</body>"
         "</html>")})
 

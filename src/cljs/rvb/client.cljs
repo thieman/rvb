@@ -6,13 +6,13 @@
                          replace-tank update-tank remove-tank get-tank-by-id*]]
         [rvb.ai :only [make-decisions]]
         [cljs.core.async :only [chan close! sliding-buffer dropping-buffer timeout >! <!]])
-  (:require-macros [cljs.core.async.macros :refer [go alts!]]))
+  (:require-macros [cljs.core.async.macros :refer [go]]))
 
 (def canvas (construct (->Canvas)))
 (def *next-tank-id* (atom 0))
 (def *tanks* (atom []))
 
-(def speed {:move 20 :turn-left 25 :turn-right 25 :fire 0.3 :bullet 40})
+(def speed {:move 30 :reverse 20 :turn-left 25 :turn-right 25 :fire 0.3 :bullet 40})
 
 (def tanks-but-me (partial tanks-but-me* *tanks*))
 (def get-tank-by-id (partial get-tank-by-id* *tanks*))
@@ -61,6 +61,7 @@
 (defn process-animation-command [op old-tank]
   (condp = op
     :move (move old-tank 1)
+    :reverse (move old-tank -1)
     :turn-left (orient old-tank (dec (:angle old-tank)))
     :turn-right (orient old-tank (inc (:angle old-tank)))
     :fire (fire old-tank)))
